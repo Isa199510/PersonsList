@@ -16,6 +16,7 @@
 		F48377712920F6AE00C10C59 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48377702920F6AE00C10C59 /* TabBarController.swift */; };
 		F48377732920FA0F00C10C59 /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48377722920FA0F00C10C59 /* PersonsListViewController.swift */; };
 		F48377752921028A00C10C59 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48377742921028A00C10C59 /* UserInfoViewController.swift */; };
+		F496CAEC2921209100536915 /* PersonsListTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F496CAEB2921209100536915 /* PersonsListTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F48377702920F6AE00C10C59 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F48377722920FA0F00C10C59 /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonsListViewController.swift; path = PersonsList/ViewControllers/PersonsListViewController.swift; sourceTree = SOURCE_ROOT; };
 		F48377742921028A00C10C59 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		F496CAEB2921209100536915 /* PersonsListTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListTwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				F48377702920F6AE00C10C59 /* TabBarController.swift */,
 				F48377722920FA0F00C10C59 /* PersonsListViewController.swift */,
+				F496CAEB2921209100536915 /* PersonsListTwoViewController.swift */,
 				F48377742921028A00C10C59 /* UserInfoViewController.swift */,
 			);
 			path = ViewControllers;
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F496CAEC2921209100536915 /* PersonsListTwoViewController.swift in Sources */,
 				F483776F2920F34C00C10C59 /* PersonsList.swift in Sources */,
 				F48377752921028A00C10C59 /* UserInfoViewController.swift in Sources */,
 				F48377732920FA0F00C10C59 /* PersonsListViewController.swift in Sources */,
