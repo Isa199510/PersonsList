@@ -21,22 +21,22 @@ class DataStore {
     var names = ["Тимур", "Николай", "Александр", "Артем", "Рустам", "Ренат", "Иван"]
     var surnames = ["Иванов", "Соколов", "Морозов", "Егоров", "Кузнецов", "Антонов", "Ермолов"]
     var phones = [
-        "8754689843",
-        "4798574938",
-        "5432464544",
-        "4526462425",
-        "4526656554",
-        "2454545454",
-        "4325454543"
+        "8754689841",
+        "4798574932",
+        "5432464543",
+        "4526462424",
+        "4526656555",
+        "2454545456",
+        "4325454547"
     ]
     var emails = [
-        "vregfr4@mail.ru",
-        "fref434@mail.ru",
-        "rfef34@mail.ru",
-        "vfefg4@mail.ru",
-        "cfvfde@mail.ru",
-        "f43fef@list.ru",
-        "fef43@gmail.com"
+        "mailOne@mail.ru",
+        "mailTwo@mail.ru",
+        "mailThree@mail.ru",
+        "mailFour@mail.ru",
+        "mailFive@mail.ru",
+        "fmailSix@list.ru",
+        "mailSeven@gmail.com"
     ]
 }
 

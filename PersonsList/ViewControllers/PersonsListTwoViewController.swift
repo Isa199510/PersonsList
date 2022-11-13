@@ -9,11 +9,11 @@ import UIKit
 
 class PersonsListTwoViewController: UITableViewController {
 
-    private var personsList: [Person]!
+    private var personsList  = Person.getPersonList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.rowHeight = 43.5
     }
 
     // MARK: - Table view data source
@@ -34,9 +34,11 @@ class PersonsListTwoViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personListIdentiferTwo", for: indexPath)
   
         let textResult = indexPath.row == 0 ? personsList[indexPath.section].phone : personsList[indexPath.section].email
+        let imageResult = indexPath.row == 0 ? UIImage(named: "phone") : UIImage(named: "mail")
         var content = cell.defaultContentConfiguration()
+        
         content.text = "\(textResult)"
-
+        content.image = imageResult
         cell.contentConfiguration = content
         
         return cell
