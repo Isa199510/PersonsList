@@ -9,7 +9,7 @@ import UIKit
 
 class PersonsListTwoViewController: UITableViewController {
 
-    private var personsList  = Person.getPersonList()
+    var personsList: [Person]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class PersonsListTwoViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return personsList.count
+        personsList.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

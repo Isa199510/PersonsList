@@ -84,7 +84,7 @@
             </objects>
             <point key="canvasLocation" x="2720" y="80"/>
         </scene>
-        <!--Persons List Two View Controller-->
+        <!--Persons List-->
         <scene sceneID="S1o-gH-GiV">
             <objects>
                 <tableViewController id="4Gf-w2-JGi" customClass="PersonsListTwoViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,7 +107,7 @@
                             <outlet property="delegate" destination="4Gf-w2-JGi" id="rib-nE-U2L"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="WLj-ev-4Fj"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="WLj-ev-4Fj"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUw-dA-dnp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

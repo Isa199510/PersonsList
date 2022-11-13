@@ -8,7 +8,9 @@
 import UIKit
 
 class TabBarController: UITabBarController {
-
+    
+    private var personsList = Person.getPersonList()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,5 +19,18 @@ class TabBarController: UITabBarController {
         
         tabBar.standardAppearance = tabBarAppearance
         tabBar.scrollEdgeAppearance = tabBarAppearance
+
+        guard let vc = viewControllers else { return }
+        vc.forEach { Viewcontroller in
+            if let navigationController = Viewcontroller  as? UINavigationController {
+                if let firstVC = navigationController.topViewController as? PersonsListViewController {
+                    firstVC.personsList = personsList
+                } else if let secondVC = navigationController.topViewController as? PersonsListTwoViewController {
+                    secondVC.personsList = personsList
+                }
+            }
+        }
+        
+        
     }
 }
