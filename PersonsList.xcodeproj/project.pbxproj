@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		F48377572920F0B700C10C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48377562920F0B700C10C59 /* AppDelegate.swift */; };
 		F48377592920F0B700C10C59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48377582920F0B700C10C59 /* SceneDelegate.swift */; };
-		F483775B2920F0B700C10C59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483775A2920F0B700C10C59 /* ViewController.swift */; };
 		F483775E2920F0B700C10C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F483775C2920F0B700C10C59 /* Main.storyboard */; };
 		F48377602920F0BA00C10C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F483775F2920F0BA00C10C59 /* Assets.xcassets */; };
 		F48377632920F0BA00C10C59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48377612920F0BA00C10C59 /* LaunchScreen.storyboard */; };
+		F483776F2920F34C00C10C59 /* PersonsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483776E2920F34C00C10C59 /* PersonsList.swift */; };
+		F48377712920F6AE00C10C59 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48377702920F6AE00C10C59 /* TabBarController.swift */; };
+		F48377732920FA0F00C10C59 /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48377722920FA0F00C10C59 /* PersonsListViewController.swift */; };
+		F48377752921028A00C10C59 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48377742921028A00C10C59 /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F48377532920F0B600C10C59 /* PersonsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48377562920F0B700C10C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F48377582920F0B700C10C59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F483775A2920F0B700C10C59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F483775D2920F0B700C10C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F483775F2920F0BA00C10C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F48377622920F0BA00C10C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F48377642920F0BA00C10C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F483776E2920F34C00C10C59 /* PersonsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsList.swift; sourceTree = "<group>"; };
+		F48377702920F6AE00C10C59 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F48377722920FA0F00C10C59 /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonsListViewController.swift; path = PersonsList/ViewControllers/PersonsListViewController.swift; sourceTree = SOURCE_ROOT; };
+		F48377742921028A00C10C59 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		F48377552920F0B600C10C59 /* PersonsList */ = {
 			isa = PBXGroup;
 			children = (
-				F48377562920F0B700C10C59 /* AppDelegate.swift */,
-				F48377582920F0B700C10C59 /* SceneDelegate.swift */,
-				F483775A2920F0B700C10C59 /* ViewController.swift */,
-				F483775C2920F0B700C10C59 /* Main.storyboard */,
+				F483776D2920F31D00C10C59 /* Models */,
+				F483776B2920F10900C10C59 /* ViewControllers */,
+				F483776A2920F0FD00C10C59 /* Storyboards */,
+				F483776C2920F11900C10C59 /* SupportFiles */,
 				F483775F2920F0BA00C10C59 /* Assets.xcassets */,
-				F48377612920F0BA00C10C59 /* LaunchScreen.storyboard */,
 				F48377642920F0BA00C10C59 /* Info.plist */,
 			);
 			path = PersonsList;
+			sourceTree = "<group>";
+		};
+		F483776A2920F0FD00C10C59 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F483775C2920F0B700C10C59 /* Main.storyboard */,
+				F48377612920F0BA00C10C59 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F483776B2920F10900C10C59 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F48377702920F6AE00C10C59 /* TabBarController.swift */,
+				F48377722920FA0F00C10C59 /* PersonsListViewController.swift */,
+				F48377742921028A00C10C59 /* UserInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F483776C2920F11900C10C59 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F48377562920F0B700C10C59 /* AppDelegate.swift */,
+				F48377582920F0B700C10C59 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		F483776D2920F31D00C10C59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F483776E2920F34C00C10C59 /* PersonsList.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F483775B2920F0B700C10C59 /* ViewController.swift in Sources */,
+				F483776F2920F34C00C10C59 /* PersonsList.swift in Sources */,
+				F48377752921028A00C10C59 /* UserInfoViewController.swift in Sources */,
+				F48377732920FA0F00C10C59 /* PersonsListViewController.swift in Sources */,
+				F48377712920F6AE00C10C59 /* TabBarController.swift in Sources */,
 				F48377572920F0B700C10C59 /* AppDelegate.swift in Sources */,
 				F48377592920F0B700C10C59 /* SceneDelegate.swift in Sources */,
 			);
