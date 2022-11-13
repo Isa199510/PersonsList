@@ -3,9 +3,6 @@
 //  PersonsList
 //
 //  Created by Иса on 13.11.2022.
-//
-
-import Foundation
 
 struct Person {
     let name: String
@@ -29,7 +26,7 @@ class DataStore {
         "2454545456",
         "4325454547"
     ]
-    var emails = [
+    var mails = [
         "mailOne@mail.ru",
         "mailTwo@mail.ru",
         "mailThree@mail.ru",
@@ -45,31 +42,23 @@ extension Person {
     static func getPersonList() -> [Person]{
         var persons = [Person]()
         let dataStore = DataStore()
-
-        for _ in 0..<dataStore.names.count {
-            let randomName = dataStore.names.randomElement()
-            let randomSurname = dataStore.surnames.randomElement()
-            let randomPhone = dataStore.phones.randomElement()
-            let randomEmail = dataStore.emails.randomElement()
-            
-            let indexRemoveName = dataStore.names.firstIndex(of: randomName!)
-            let indexRemoveSurname = dataStore.surnames.firstIndex(of: randomSurname!)
-            let indexRemovePhone = dataStore.phones.firstIndex(of: randomPhone!)
-            let indexRemoveEmail = dataStore.emails.firstIndex(of: randomEmail!)
-
-            let removeName = dataStore.names.remove(at: indexRemoveName!)
-            let removeSurname = dataStore.surnames.remove(at: indexRemoveSurname!)
-            let removePhone = dataStore.phones.remove(at: indexRemovePhone!)
-            let removeEmail = dataStore.emails.remove(at: indexRemoveEmail!)
-            
+        
+        dataStore.names.shuffle()
+        dataStore.surnames.shuffle()
+        dataStore.phones.shuffle()
+        dataStore.mails.shuffle()
+        
+        for item in 0..<dataStore.names.count {
             persons.append(Person(
-                name: removeName,
-                surname: removeSurname,
-                phone: removePhone,
-                email: removeEmail
+                name: dataStore.names[item],
+                surname: dataStore.surnames[item],
+                phone: dataStore.phones[item],
+                email: dataStore.mails[item]
                 )
             )
         }
         return persons
     }
 }
+
+

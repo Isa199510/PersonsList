@@ -20,8 +20,9 @@ class TabBarController: UITabBarController {
         tabBar.standardAppearance = tabBarAppearance
         tabBar.scrollEdgeAppearance = tabBarAppearance
 
-        guard let vc = viewControllers else { return }
-        vc.forEach { Viewcontroller in
+        guard let tabBarController = viewControllers else { return }
+        
+        tabBarController.forEach { Viewcontroller in
             if let navigationController = Viewcontroller  as? UINavigationController {
                 if let firstVC = navigationController.topViewController as? PersonsListViewController {
                     firstVC.personsList = personsList
